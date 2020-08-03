@@ -62,7 +62,7 @@ namespace ConstructionLine.CodingChallenge.Engine
 
                 for (var sizeIndex = 0; sizeIndex < Size.All.Count; sizeIndex++)
                 {
-                    if (Size.All[sizeIndex].Matches(searchOptions.Sizes))
+                    if (Size.All[sizeIndex].Matches(searchOptions.Sizes) && Color.All[colorIndex].Matches(searchOptions.Colors))
                     {
                         count += _numberShirtsByColorAndSizeCache[colorIndex, sizeIndex];
                     }
@@ -84,7 +84,7 @@ namespace ConstructionLine.CodingChallenge.Engine
 
                 for (var colorIndex = 0; colorIndex < Color.All.Count; colorIndex++)
                 {
-                    if (Color.All[colorIndex].Matches(searchOptions.Colors))
+                    if (Size.All[sizeIndex].Matches(searchOptions.Sizes) && Color.All[colorIndex].Matches(searchOptions.Colors))
                     {
                         count += _numberShirtsByColorAndSizeCache[colorIndex, sizeIndex];
                     }

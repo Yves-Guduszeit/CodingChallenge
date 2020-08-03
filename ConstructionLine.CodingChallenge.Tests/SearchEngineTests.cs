@@ -162,7 +162,7 @@ namespace ConstructionLine.CodingChallenge.Tests
         }
 
         [Test]
-        public void Search_Should_Return_Only_Color_Counts_Matching_To_Given_Sizes_But_Not_Depending_To_Given_Colors()
+        public void Search_Should_Return_Only_Color_Counts_Matching_To_Given_Colors_And_Sizes()
         {
             var shirts = GetShirts();
 
@@ -216,7 +216,7 @@ namespace ConstructionLine.CodingChallenge.Tests
         }
 
         [Test]
-        public void Search_Should_Return_Only_Size_Counts_Matching_To_Given_Colors_But_Not_Depending_To_Given_Sizes()
+        public void Search_Should_Return_Only_Size_Counts_Matching_To_Given_Colors_And_Sizes()
         {
             var shirts = GetShirts();
 
